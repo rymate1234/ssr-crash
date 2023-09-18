@@ -10,7 +10,7 @@ const adapter = require("gatsby-adapter-netlify")
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  adapter: adapter({
+  adapter: adapter.default({
     excludeDatastoreFromEngineFunction: true,
   }),
 }
