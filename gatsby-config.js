@@ -4,9 +4,13 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
 
+const adapter = require("gatsby-adapter-netlify")
+
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+  adapter: adapter({
+    excludeDatastoreFromEngineFunction: true,
+  }),
 }
